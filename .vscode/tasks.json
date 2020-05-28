@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Docker-run",
+            "type": "shell",
+            "command": "sam local invoke -e events/event_phototest.json OcrFunction",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Docker-build",
+            "type": "shell",
+            "command": "sam build --use-container",
+            "problemMatcher": [],         
+        },
+        {
+            "label": "Start-localhost",
+            "type": "shell",
+            "command": "sam local start-api",
+            "problemMatcher": [],         
+        }        
+    ]
+}
