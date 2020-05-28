@@ -29,6 +29,18 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "pytest-deployed",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "tests/deployed_server",
+                "-sv"
+            ],
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "python",
             "type": "python",
             "request": "launch",
