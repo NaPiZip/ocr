@@ -68,7 +68,7 @@ def test_sending_example_image(mocker):
 ```
 Here is an example of an image I used to test the lamda function:
 <p align="center">
-<img src="https://github.com/NaPiZip/Online-course-notes/raw/master/AWS_cloud/Fundational_level/s3_ocr_lambda/ocr/tests/unit/resources/phototest.tif" alt="ocr parsed text"/></p>
+<img src="https://github.com/NaPiZip/ocr/raw/master/tests/unit/resources/phototest.tif" alt="ocr parsed text"/></p>
 And the result:<br>
 
 ```python
